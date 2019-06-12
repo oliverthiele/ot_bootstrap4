@@ -1,0 +1,76 @@
+# Load default processing options
+imports:
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  config:
+    contentsCss: "EXT:ot_bootstrap4/Resources/Public/Css/CkEditor.css"
+
+    format_tags: "p;h1;h2;h3;h4;h5;pre;address;div"
+
+    stylesSet:
+      # block level styles
+      - { name: 'Normal', element: 'p'}
+      - { name: "Display 1", element: "h1", attributes: { class: 'display-1' }}
+      - { name: "Display 2", element: "h1", attributes: { class: 'display-2' }}
+      - { name: "Display 3", element: "h1", attributes: { class: 'display-3' }}
+      - { name: "Display 4", element: "h1", attributes: { class: 'display-4' }}
+      # Paragraph
+      - { name: 'Lead', element: 'p', attributes: { class: 'lead' } }
+      # Buttons
+      - { name: 'BTN Primary', element: 'a', attributes: { class: 'btn btn-primary' } }
+      - { name: 'BTN Secondary', element: 'a', attributes: { class: 'btn btn-secondary' } }
+      - { name: 'BTN Success', element: 'a', attributes: { class: 'btn btn-success' } }
+      - { name: 'BTN Danger', element: 'a', attributes: { class: 'btn btn-danger' } }
+      - { name: 'BTN Warning', element: 'a', attributes: { class: 'btn btn-warning' } }
+      - { name: 'BTN Info', element: 'a', attributes: { class: 'btn btn-info' } }
+      - { name: 'BTN Light', element: 'a', attributes: { class: 'btn btn-light' } }
+      - { name: 'BTN Dark', element: 'a', attributes: { class: 'btn btn-dark' } }
+      - { name: 'BTN Link', element: 'a', attributes: { class: 'btn btn-link' } }
+      # Outline Buttons
+      - { name: 'BTN-O Primary', element: 'a', attributes: { class: 'btn btn-outline-primary' } }
+      - { name: 'BTN-O Secondary', element: 'a', attributes: { class: 'btn btn-outline-secondary' } }
+      - { name: 'BTN-O Success', element: 'a', attributes: { class: 'btn btn-outline-success' } }
+      - { name: 'BTN-O Danger', element: 'a', attributes: { class: 'btn btn-outline-danger' } }
+      - { name: 'BTN-O Warning', element: 'a', attributes: { class: 'btn btn-outline-warning' } }
+      - { name: 'BTN-O Info', element: 'a', attributes: { class: 'btn btn-outline-info' } }
+      - { name: 'BTN-O Light', element: 'a', attributes: { class: 'btn btn-outline-light' } }
+      - { name: 'BTN-O Dark', element: 'a', attributes: { class: 'btn btn-outline-dark' } }
+      # Unordered List
+      - { name: 'Unstyled', element: 'ul', attributes: { class: 'list-unstyled' } }
+      - { name: 'Inline', element: 'ul', attributes: { class: 'list-inline' } }
+      # Others
+      - { name: 'Code block', element: 'code' }
+
+    toolbarGroups:
+      - { name: styles, groups: [ styles, format ] }
+      - { name: basicstyles, groups: [ basicstyles ] }
+      - { name: paragraph, groups: [ list, indent, blocks, align ] }
+      - { name: links, groups: [ links ] }
+      - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
+      - { name: editing, groups: [ spellchecker ] }
+      - { name: insert, groups: [ insert ] }
+      - { name: tools, groups: [ table, specialchar, insertcharacters ] }
+      - { name: document, groups: [ mode ] }
+
+    justifyClasses:
+      - text-left
+      - text-center
+      - text-right
+      - text-justify
+
+    extraPlugins:
+      - justify
+      - autolink
+
+    removePlugins:
+      - image
+
+    removeButtons:
+      - Anchor
+      - Underline
+      - Strike
