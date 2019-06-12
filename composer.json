@@ -1,0 +1,31 @@
+{
+  "name": "oliverthiele/ot-bootstrap4",
+  "type": "typo3-cms-extension",
+  "description": "Bootstrap 4 Sitepackage",
+  "homepage": "https://www.oliver-thiele.de/",
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "keywords": [
+    "typo3",
+    "cms",
+    "template",
+    "Bootstrap"
+  ],
+  "version": "9.5.0",
+  "require": {
+    "typo3/cms-core": "^9.5",
+    "typo3/cms-rte-ckeditor": "^9.5",
+    "typo3/cms-fluid-styled-content": "^9.5",
+    "twbs/bootstrap": "^4.3",
+    "fortawesome/font-awesome": "^5.9"
+  },
+  "replace": {
+    "ot_bootstrap4": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "OliverThiele\\OtBootstrap4\\": "Classes/"
+    }
+  }
+}
