@@ -1,0 +1,67 @@
+# Standard Layouts Homepage (with pagefooter) and Default
+mod {
+	web_layout {
+		BackendLayouts {
+			Homepage {
+				title = LLL:EXT:ot_bootstrap4/Resources/Private/Language/locallang_ttc.xlf:backendLayout.homepage
+				config {
+					backend_layout {
+						colCount = 1
+						rowCount = 3
+						rows {
+							1 {
+								columns {
+									1 {
+										name = LLL:EXT:ot_bootstrap4/Resources/Private/Language/locallang_ttc.xlf:colpos.I.3
+										colPos = 3
+										colspan = 1
+									}
+								}
+							}
+							2 {
+								columns {
+									1 {
+										name = LLL:EXT:ot_bootstrap4/Resources/Private/Language/locallang_ttc.xlf:colpos.I.0
+										colPos = 0
+										colspan = 1
+									}
+								}
+							}
+							3 {
+								columns {
+									1 {
+										name = LLL:EXT:ot_bootstrap4/Resources/Private/Language/locallang_ttc.xlf:colpos.I.6
+										colPos = 6
+										colspan = 1
+									}
+								}
+							}
+						}
+					}
+				}
+				icon = EXT:ot_bootstrap4/Resources/Public/Images/BackendLayouts/BL-Home-12_Footer.svg
+			}
+			Default {
+				title = LLL:EXT:ot_bootstrap4/Resources/Private/Language/locallang_ttc.xlf:backendLayout.default
+				config {
+					backend_layout {
+						colCount = 1
+						rowCount = 1
+						rows {
+							1 {
+								columns {
+									1 {
+										name = LLL:EXT:ot_bootstrap4/Resources/Private/Language/locallang_ttc.xlf:colpos.I.0
+										colPos = 0
+										colspan = 1
+									}
+								}
+							}
+						}
+					}
+				}
+				icon = EXT:ot_bootstrap4/Resources/Public/Images/BackendLayouts/BL-Default-12.svg
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{namespace b=OliverThiele\OtBootstrap4\ViewHelpers}
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="https://xsd.oliver-thiele.de/ns/typo3/cms-fluid/9.5/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<head>
+	<meta charset="utf-8">
+	<title>Template: 12_6-6_12</title>
+</head>
+<body>
+
+<f:layout name="DefaultLayout" />
+
+<f:section name="Content">
+	<!-- 12_6-6_12 template start-->
+	<div class="row">
+		{content3 -> f:format.raw()}
+	</div>
+	<!-- row end -->
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+			<div class="row">
+				{content1 -> f:format.raw()}
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<div class="row">
+				{content2 -> f:format.raw()}
+			</div>
+		</div>
+	</div>
+	<!-- row end -->
+	<div class="row">
+		{content4 -> f:format.raw()}
+	</div><!-- row end -->
+	<!-- 12_6-6_12 template end -->
+</f:section>
+
+</body>
+</html>
