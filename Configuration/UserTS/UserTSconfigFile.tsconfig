@@ -1,0 +1,14 @@
+/**
+ * User TSconfig
+ *
+ * @see http://docs.typo3.org/typo3cms/TSconfigReference/UserTsconfig/
+ */
+
+options {
+	# default: 0
+	pageTree.showNavTitle = 1
+
+	# default: 1,6,4,7,3,254,255,199
+	# 1=Standard, 6=Backend User, 4=Shortcut, 7=Mount Point, 3=Link to External URL, 254=Folder, 255=Recycler, 199=Menu Seperator
+	pageTree.doktypesToShowInNewPageDragArea = 1,4,3,254,199
+}
