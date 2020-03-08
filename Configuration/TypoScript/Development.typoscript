@@ -1,0 +1,7 @@
+[applicationContext == "Development"]
+page {
+    meta {
+        robots = noindex,nofollow
+    }
+}
+[end]
