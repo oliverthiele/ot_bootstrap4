@@ -8,7 +8,6 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['otBootstrap4'] = 'EXT:ot_bootstra
 
 if (TYPO3_MODE === 'BE') {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
-        '@import "EXT:ot_bootstrap4/Configuration/UserTS/UserTSconfigFile.tsconfig"'
+        '@import "EXT:ot_bootstrap4/Configuration/TSconfig/User/UserTSconfigFile.tsconfig"'
     );
 }
-
