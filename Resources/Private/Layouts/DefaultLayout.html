@@ -3,8 +3,20 @@
 	  xmlns:f="https://xsd.oliver-thiele.de/ns/typo3/cms-fluid/9.5/ViewHelpers"
 	  data-namespace-typo3-fluid="true">
 <f:spaceless>
-	<div class="row">
+	<f:if condition="{debug} == 1">
+		<f:debug>{_all}</f:debug>
+	</f:if>
+
+	<div class="container">
+		<f:if condition="{settings.ot.appearance.showPageHeaderAsH1} == 1 && {data.disable_page_header} != 1">
+			<h1 class="page-header">{data.title}
+				<f:if condition="{data.subtitle}">
+					<br /><small>{data.subtitle}</small>
+				</f:if></h1>
+		</f:if>
+
 		<f:render section="Content" />
+
 	</div>
 </f:spaceless>
 </html>
