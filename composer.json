@@ -12,13 +12,11 @@
     "template",
     "Bootstrap"
   ],
-  "version": "9.5.0",
+  "version": "10.3.0",
   "require": {
-    "typo3/cms-core": "^9.5",
-    "typo3/cms-rte-ckeditor": "^9.5",
-    "typo3/cms-fluid-styled-content": "^9.5",
-    "twbs/bootstrap": "^4.3",
-    "fortawesome/font-awesome": "^5.9"
+    "typo3/cms-core": "^10.3",
+    "twbs/bootstrap": "^4.4",
+    "fortawesome/font-awesome": "^5.12"
   },
   "replace": {
     "ot_bootstrap4": "*"

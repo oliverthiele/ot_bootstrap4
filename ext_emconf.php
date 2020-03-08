@@ -17,15 +17,15 @@ $EM_CONF[$_EXTKEY] = [
     'state' => 'beta',
     'uploadfolder' => false,
     'clearCacheOnLoad' => true,
-    'version' => '9.5.0',
+    'version' => '10.3.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-9.9.99',
+            'typo3' => '10.3.0-10.9.99',
             'fluid_styled_content' => ''
         ],
         'conflicts' => [],
         'suggests' => [
-            'ot_divider' => '9.5.0-9.9.99'
+            'ot_divider' => '10.3.0-10.9.99'
         ],
     ],
     'autoload' => [
