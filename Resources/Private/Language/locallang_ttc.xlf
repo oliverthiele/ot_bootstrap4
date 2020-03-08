@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2020-03-08T13:17:17Z"
+          product-name="ot_bootstrap4">
+        <header/>
+        <body>
+            <trans-unit id="colpos.I.0">
+                <source>Main Content</source>
+            </trans-unit>
+            <trans-unit id="colpos.I.1">
+                <source>Left</source>
+            </trans-unit>
+            <trans-unit id="colpos.I.2">
+                <source>Right</source>
+            </trans-unit>
+            <trans-unit id="colpos.I.3">
+                <source>First row</source>
+            </trans-unit>
+            <trans-unit id="colpos.I.4">
+                <source>Last row</source>
+            </trans-unit>
+            <trans-unit id="colpos.I.6">
+                <source>Footer</source>
+            </trans-unit>
+            <trans-unit id="colpos.I.7">
+                <source>Footer 2</source>
+            </trans-unit>
+            <trans-unit id="colpos.I.8">
+                <source>Footer 3</source>
+            </trans-unit>
+            <trans-unit id="colpos.I.9">
+                <source>Footer 4</source>
+            </trans-unit>
+            <trans-unit id="colpos.I.20">
+                <source>For logged in users</source>
+            </trans-unit>
+            <trans-unit id="backendLayout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="backendLayout.homepage">
+                <source>Homepage</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

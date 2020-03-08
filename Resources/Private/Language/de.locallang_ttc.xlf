@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2020-03-08T13:17:17Z"
+          product-name="ot_bootstrap4">
+        <header/>
+        <body>
+            <trans-unit id="colpos.I.0">
+                <source>Main Content</source>
+                <target>Hauptinhalt</target>
+            </trans-unit>
+            <trans-unit id="colpos.I.1">
+                <source>Left</source>
+                <target>Links</target>
+            </trans-unit>
+            <trans-unit id="colpos.I.2">
+                <source>Right</source>
+                <target>Rechts</target>
+            </trans-unit>
+            <trans-unit id="colpos.I.3">
+                <source>First row</source>
+                <target>Erste Zeile</target>
+            </trans-unit>
+            <trans-unit id="colpos.I.4">
+                <source>Last row</source>
+                <target>Letzte Zeile</target>
+            </trans-unit>
+            <trans-unit id="colpos.I.6">
+                <source>Footer</source>
+                <target>Fußzeile</target>
+            </trans-unit>
+            <trans-unit id="colpos.I.7">
+                <source>Footer 2</source>
+                <target>Fußzeile 2</target>
+            </trans-unit>
+            <trans-unit id="colpos.I.8">
+                <source>Footer 3</source>
+                <target>Fußzeile 3</target>
+            </trans-unit>
+            <trans-unit id="colpos.I.9">
+                <source>Footer 4</source>
+                <target>Fußzeile 4</target>
+            </trans-unit>
+            <trans-unit id="colpos.I.20">
+                <source>For logged in users</source>
+                <target>Für angemeldete Benutzer</target>
+            </trans-unit>
+            <trans-unit id="backendLayout.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+            <trans-unit id="backendLayout.homepage">
+                <source>Homepage</source>
+                <target>Startseite</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
