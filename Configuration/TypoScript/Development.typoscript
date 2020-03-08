@@ -1,7 +1,44 @@
 [applicationContext == "Development"]
+config {
+    disablePrefixComment = 0
+    contentObjectExceptionHandler = 0
+    linkVars := addToList(debug(int))
+}
+
 page {
+    config {
+        debug = 1
+
+        concatenateJs = 0
+        compressJs = 0
+
+        concatenateCss = 0
+        compressCss = 0
+
+        contentObjectExceptionHandler = 0
+    }
     meta {
         robots = noindex,nofollow
+    }
+    10 {
+        settings {
+            ot.typo3context = Development
+        }
+    }
+}
+[end]
+
+[request.getQueryParams()['debug'] == 1 && applicationContext == "Development"]
+page {
+    config {
+        no_cache = 1
+        admPanel = 1
+    }
+    10 {
+        variables {
+            debug = TEXT
+            debug.value = 1
+        }
     }
 }
 [end]
