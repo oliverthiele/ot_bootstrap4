@@ -1,0 +1,14 @@
+/**
+* lib.templateName gets the name of the BackendLayout from the DB fields backend_layout and backend_layout_next_levels
+*/
+
+lib.templateName = TEXT
+lib.templateName {
+    stdWrap {
+        data = pagelayout
+        split {
+            token = pagets__
+            1.current = 1
+        }
+    }
+}
