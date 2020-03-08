@@ -112,7 +112,7 @@ class ContentElementWrapperViewHelper extends AbstractViewHelper
         }
 
         // animate.css
-        
+        // @see https://github.com/daneden/animate.css
         if ($data['animation_type'] !== '0' && $data['animation_type'] !== null && $data['animation_type'] !== '') {
             $cssAnimation = ' animated ';
             // todo DB
