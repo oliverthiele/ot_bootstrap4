@@ -152,6 +152,77 @@ $tempColumns = [
             'eval' => ''
         ]
     ],
+    'bootstrap_shadow' => [
+        'exclude' => true,
+        'label' => 'Shadow',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['', ''],
+                ['No shadow', 'shadow-none'],
+                ['Small shadow', 'shadow-sm'],
+                ['Regular shadow', 'shadow'],
+                ['Large shadow', 'shadow-lg'],
+            ],
+            'size' => 1,
+            'maxitems' => 1,
+            'default' => ''
+        ]
+    ],
+    'animation_type' => [
+        'exclude' => true,
+        'label' => 'Animation Type',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['', '0'],
+                ['fadeIn', 'fadeIn'],
+                ['fadeInUp', 'fadeInUp'],
+                ['fadeInLeft', 'fadeInLeft'],
+                ['fadeInRight', 'fadeInRight'],
+                ['fadeInDown', 'fadeInDown'],
+                ['zoomIn', 'zoomIn'],
+            ],
+            'size' => 1,
+            'maxitems' => 1,
+            'default' => ''
+        ]
+    ],
+    'animation_delay' => [
+        'exclude' => true,
+        'label' => 'Animation Delay in seconds',
+        'config' => [
+            'type' => 'input',
+            'size' => '1',
+            'max' => '1',
+            'eval' => 'int',
+            'default' => '0'
+        ]
+    ],
+    'animation_speed' => [
+        'exclude' => true,
+        'label' => 'Animation Speed (ms)',
+        'config' => [
+            'type' => 'input',
+            'size' => '4',
+            'max' => '6',
+            'eval' => '',
+            'default' => '1000'
+        ]
+    ],
+    'animation_offset' => [
+        'exclude' => true,
+        'label' => 'Offset',
+        'config' => [
+            'type' => 'input',
+            'size' => '4',
+            'max' => '4',
+            'eval' => 'trim',
+            'default' => '90%'
+        ]
+    ],
     'disable_div_wrapper' => [
         'exclude' => true,
         'label' => 'Disable DIV-Wrapper',
@@ -170,6 +241,8 @@ $tempColumns = [
     'frames',
     '  --linebreak--, disable_div_wrapper, --linebreak--, ' .
     'bootstrap_col_xs, bootstrap_col_sm, bootstrap_col_md, bootstrap_col_lg, bootstrap_col_xl, --linebreak--, ' .
+    'bootstrap_shadow, --linebreak--,' .
     'bootstrap_css_outer, bootstrap_css_inner, --linebreak--,' .
+    'animation_type, animation_delay, animation_speed, animation_offset, --linebreak--',
     'after: space_after_class'
 );

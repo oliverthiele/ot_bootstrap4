@@ -1,0 +1,30 @@
+TCEFORM {
+    pages {
+        php_tree_stop.disabled = 1
+    }
+    tt_content {
+        CType {
+            # Use only content elements with relations to the  tt_content database field assets
+            removeItems = textpic, image
+        }
+        space_before_class {
+            disabled = 1
+        }
+        space_after_class {
+            disabled = 1
+        }
+        frame_class {
+            # Use Bootstrap CSS classes
+            removeItems = indent, indent-left, indent-right
+        }
+        linkToTop {
+            # Use a Javascript with hide/show toggle
+            disabled = 1
+        }
+    }
+}
+
+TCEFORM.pages.doktype {
+    # Remove the page with doktype "Recycler"
+    removeItems = 255
+}
