@@ -1,0 +1,89 @@
+lib.contentElement >
+
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/Helper/ParseFunc.typoscript'
+
+# Content element rendering
+tt_content {
+    stdWrap {
+        # Setup the edit panel for all content elements
+        editPanel = 1
+        editPanel {
+            allow = move, new, edit, hide, delete
+            label = %s
+            onlyCurrentPid = 1
+            previewBorder = 1
+            edit.displayRecord = 1
+        }
+    }
+}
+
+
+lib.otContentElement = FLUIDTEMPLATE
+lib.otContentElement {
+    templateName = Default
+
+    templateRootPaths {
+        10 = EXT:ot_bootstrap4/Resources/Private/Content/Templates/
+    }
+    partialRootPaths {
+        10 = EXT:ot_bootstrap4/Resources/Private/Content/Partials/
+    }
+    layoutRootPaths {
+        10 = EXT:ot_bootstrap4/Resources/Private/Content/Layouts/
+    }
+    settings {
+        defaultHeaderType = {$styles.content.defaultHeaderType}
+        media {
+            lazyLoading = {$styles.content.image.lazyLoading}
+            popup {
+                bodyTag = <body style="margin:0; background:#fff;">
+                wrap = <a href="javascript:close();"> | </a>
+                width = {$styles.content.textmedia.linkWrap.width}
+                height = {$styles.content.textmedia.linkWrap.height}
+                crop.data = file:current:crop
+                JSwindow = 1
+                JSwindow {
+                    newWindow = {$styles.content.textmedia.linkWrap.newWindow}
+                    if.isFalse = {$styles.content.textmedia.linkWrap.lightboxEnabled}
+                }
+                directImageLink = {$styles.content.textmedia.linkWrap.lightboxEnabled}
+                linkParams.ATagParams.dataWrap =  class="{$styles.content.textmedia.linkWrap.lightboxCssClass}" rel="{$styles.content.textmedia.linkWrap.lightboxRelAttribute}"
+            }
+            additionalConfig {
+                no-cookie = 1
+                api = 0
+            }
+        }
+    }
+}
+
+# Typical content elements
+@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/Header.typoscript'
+@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/Html.typoscript'
+@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/Text.typoscript'
+
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/Bullets.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/Div.typoscript'
+
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/Image.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/List.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/Shortcut.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/Table.typoscript'
+
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/Textmedia.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/Textpic.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/Uploads.typoscript'
+#
+#
+## Menu content elements
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/MenuAbstract.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/MenuCategorizedContent.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/MenuCategorizedPages.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/MenuPages.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/MenuSubpages.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/MenuSection.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/MenuSectionPages.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/MenuRecentlyUpdated.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/MenuRelatedPages.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/MenuSitemap.typoscript'
+#@import 'EXT:ot_bootstrap4/Configuration/TypoScript/ContentElement/MenuSitemapPages.typoscript'
