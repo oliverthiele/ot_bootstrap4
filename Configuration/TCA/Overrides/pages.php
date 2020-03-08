@@ -11,3 +11,8 @@ defined('TYPO3_MODE') or die();
     'Configuration/TSconfig/Page/AdditionalBackendLayouts.tsconfig',
     'Additional Backend Layouts'
 );
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
+    'ot_bootstrap4',
+    'Configuration/TSconfig/Page/RTE.tsconfig',
+    'Extended RTE'
+);
